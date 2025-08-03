@@ -5,13 +5,16 @@ name : ::async_fifo:1.1.0-r1
 filesets:
   rtl:
     files:
-      - src/vlog/sync_r2w.v
-      - src/vlog/rptr_empty.v
-      - src/vlog/sync_w2r.v
-      - src/vlog/wptr_full.v
-      - src/vlog/fifo_2mem.v
-      - src/vlog/async_fifo.v
-      - src/vlog/sync_ptr.v
+      - rtl/async_bidir_fifo.v
+      - rtl/async_fifo.v
+      - rtl/async_bidir_ramif_fifo.v
+      - rtl/fifomem_dp.v
+      - rtl/fifomem.v
+      - rtl/rptr_empty.v
+      - rtl/sync_ptr.v
+      - rtl/sync_r2w.v
+      - rtl/sync_w2r.v
+      - rtl/wptr_full.v
     file_type : verilogSource
   tb:
     files:
